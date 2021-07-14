@@ -18,10 +18,11 @@ public class BasketScript : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Apple")
         {
+            Debug.Log ("a");
             audioSource.PlayOneShot(SE1);
         }
     }
